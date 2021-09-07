@@ -10,6 +10,7 @@ int main()
 	double mpgHighway = 26.8;		 // ditto, but while on the highway
 	double totalMiles1 = 0.0;		 // Total Miles while in town
 	double totalMiles2 = 0.0;		 // ditto while on the highway
+	char choice = 'a';
 	// Calculation total miles in town
 	totalMiles1 = tankSize * mpgTown;
 	// Same as above, but while on the highway instead
@@ -26,8 +27,20 @@ int main()
 	// Ask the user if they want to enter some information
 	cout << "\nDo you want to input information for your car to see your totals?" << endl;
 	cout << "You need to know how big your tank is, your mileage in town, and on the highway." << endl;
-	cout << "\nEnter info for your car? (y/n)" cin
+	cout << "\nEnter info for your car? (y/n) ";
+	cin >> choice;
+	cout << endl;
 	cout << "\nHow many gallons of gas does your car hold? ";
 	cin >> tankSize;
+	cout << "\nHow many miles to the gallon do you get in town? ";
+	cin >> mpgTown;
+	cout << "\nHow many miles to the gallon do you get on the highway? ";
+	cin >> mpgHighway;
+	cout << endl;
+	cout << "\nYour car with a " << tankSize << " gallon tank can drive:" << endl;
+	cout << totalMiles1 << " miles in town." << endl;
+	cout << totalMiles2 << " miles on the highway." << endl;
+	cout << "Now you know...";
+	cout << "\nOk, well have a nice day!" << endl;
 	return 0;
 }
