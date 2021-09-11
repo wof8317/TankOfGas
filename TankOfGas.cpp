@@ -40,7 +40,7 @@ int main()
 	cout << "\nYour car with a " << tankSize << " gallon tank can drive:" << endl;
 	cout << totalMiles1 << " miles in town." << endl;
 	cout << totalMiles2 << " miles on the highway." << endl;
-	cout << "Now you know...";
-	cout << "\nOk, well have a nice day!" << endl;
+	cout << "\nNow you know..." << endl;
+	cout << "Ok, well have a nice day!" << endl;
 	return 0;
 }
